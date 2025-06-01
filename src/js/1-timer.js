@@ -44,9 +44,8 @@ const timer = {
   intervalId: null,
 
   start() {
-    if (this.intervalId !== null) {
-      return;
-    }
+    refs.buttonEl.disabled = true;
+    refs.inputEl.disabled = true;
     this.intervalId = setInterval(() => {
       const diff = userSelectedDate - Date.now();
 
@@ -66,6 +65,7 @@ const timer = {
 
   stop() {
     clearInterval(this.intervalId);
+    refs.inputEl.disabled = false;
   },
 
   convertMs(ms) {
