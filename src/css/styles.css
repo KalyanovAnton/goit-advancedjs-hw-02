@@ -16,6 +16,16 @@
   text-transform: uppercase;
 }
 
-input{
+.inp-timer {
   margin-left: 16px;
+}
+
+.form {
+  width: 300px;
+  margin: 24px;
+}
+.promis-label-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
